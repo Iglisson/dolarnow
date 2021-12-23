@@ -5,12 +5,11 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     titleBox: {
-        marginVertical: 20
+        marginVertical: 100
     },
     title: {
-        fontSize: 120,
-        fontFamily: "Helvetica, Arial, sans-serif",
-        fontWeight: "600",
+        fontSize: 70,
+        fontWeight: "bold",
         color: "#262626"
     },
     resultBox: {
@@ -26,11 +25,15 @@ const styles = StyleSheet.create({
         flexDirection: "column"
     },
     result: {
-        fontSize: 70,
-        fontFamily: "Helvetica, Arial, sans-serif",
+        fontSize: 40,
         fontWeight: "500",
         color: "#262626",
         margin: 10
+    },
+    dateConsult: {
+        fontSize: 20,
+        fontWeight: "500",
+        color: "#262626"
     },
     iconReload: {
         position: "absolute",

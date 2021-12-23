@@ -9,13 +9,13 @@ export default function Home() {
     const [date, setDate] = useState("")
     const [dolar, setDolar] = useState("");
     Dolar.getValue().then(v => {
-        setDolar(v.bid);
+        setDolar(parseFloat(v.bid).toFixed(2));
         setDate(v.create_date);
     });
 
     const reloadValue = () => {
         Dolar.getValue().then(v => {
-            setDolar(v.bid);
+            setDolar(parseFloat(v.bid).toFixed(2));
             setDate(v.create_date);
         });
     }
